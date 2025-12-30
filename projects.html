@@ -6,21 +6,18 @@ permalink: /projects/
 
 <div>
     <h2>University Projects</h2>
-    <ul>
-        <li>
-            <a href="https://github.com/matthewtannous/messaging-site">Messaging Website</a>
-        </li>
-        <li>
-            <a href="https://github.com/matthewtannous/Array-Based-Linked-List">Array-Based List</a>
-        </li>
-    </ul>
+    {% for item in site.data.projects.university %}
+    <div>
+        <a href="{{ item.link }}">{{ item.name }}</a> ({{ item.course }})
+    </div>
+    {% endfor %}
 </div>
 
 <div>
     <h2>Personal Projects</h2>
-    <ul>
-        <li>
-            <a href="https://github.com/matthewtannous/python_game">Python Game</a>
-        </li>
-    </ul>
+    {% for item in site.data.projects.personal %}
+    <div>
+        <a href="{{ item.link }}">{{ item.name }}</a>
+    </div>
+    {% endfor %}
 </div>
