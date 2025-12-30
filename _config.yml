@@ -22,8 +22,9 @@
 title: Matthew Tannous
 email: matthew.tannous@std.balamand.edu.lb
 
-description: >- # this means to ignore newlines until "baseurl:"
-  I am a junior student at University of Balamand.
+# description: |
+#   I am a Computer Science student in my junior year at the University of Balamand.
+
   
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://matthewtannous.github.io" # the base hostname & protocol for your site, e.g. http://example.com
@@ -58,3 +59,7 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+collections:
+  projects:
+    output: true

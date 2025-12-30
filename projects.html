@@ -4,20 +4,16 @@ title: Projects
 permalink: /projects/
 ---
 
-<div>
-    <h2>University Projects</h2>
-    {% for item in site.data.projects.university %}
-    <div>
-        <a href="{{ item.link }}">{{ item.name }}</a> ({{ item.course }})
-    </div>
-    {% endfor %}
-</div>
+<h1>Projects</h1>
 
 <div>
-    <h2>Personal Projects</h2>
-    {% for item in site.data.projects.personal %}
+    <!-- Sorting in html because github uses older verstion of jekyll,
+         must add position in each project file -->
+    {% assign ordered_projects = site.projects | sort: "position" %}
+    {% for project in ordered_projects %}
     <div>
-        <a href="{{ item.link }}">{{ item.name }}</a>
+        <h2><a href="{{ project.url }}">{{ project.title }}</a></h2>
+        <p>{{ project.short_description }}</p>
     </div>
     {% endfor %}
 </div>
