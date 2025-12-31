@@ -6,14 +6,34 @@ permalink: /projects/
 
 <h1>Projects</h1>
 
-<div>
-    <!-- Sorting in html because github uses older verstion of jekyll,
+<div class="project-container">
+    <!-- Sorting the projects in html because github uses older verstion of jekyll,
          must add position in each project file -->
     {% assign ordered_projects = site.projects | sort: "position" %}
+
+    <!-- Get all images files -->
+    {% assign image_files = site.static_files | where: "image", true %}
+
     {% for project in ordered_projects %}
-    <div>
-        <h2><a href="{{ project.url }}">{{ project.title }}</a></h2>
-        <p>{{ project.short_description }}</p>
+    <div class="project-card">
+
+        <h2 class="project-title">
+            <a href="{{ project.url }}">{{ project.title }}</a>
+        </h2>
+
+        <p class="project-description">
+            {{ project.short_description }}
+        </p>
+
+        <div class="project-images">
+            {% for image in image_files %}
+            {% if image.path contains project.title %}
+            <a href="{{ image.path }}" target="_blank">
+                <img class="project-image" src="{{ image.path }}" alt="{{ project.title }} demo">
+            </a>
+
+            {% endif %}
+            {% endfor %}
+        </div>
     </div>
     {% endfor %}
-</div>

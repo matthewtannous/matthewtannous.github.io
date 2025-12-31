@@ -22,9 +22,8 @@
 title: Matthew Tannous
 email: matthew.tannous@std.balamand.edu.lb
 
-# description: |
-#   I am a Computer Science student in my junior year at the University of Balamand.
-
+description: |
+  My portfolio site
   
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://matthewtannous.github.io" # the base hostname & protocol for your site, e.g. http://example.com
@@ -63,3 +62,9 @@ plugins:
 collections:
   projects:
     output: true
+
+defaults:
+  - scope:
+      path: "assets/images"
+    values:
+      image: true
