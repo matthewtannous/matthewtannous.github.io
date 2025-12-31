@@ -1,0 +1,40 @@
+.project-details-container {
+    margin: 0 auto;
+    padding: 0.25rem 2rem;
+    display: block;
+    line-height: 1.6;
+}
+
+.project-full-description {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 1.4rem;
+}
+
+.video-demo-container {
+    margin-bottom: 2.5rem;
+}
+
+.video-demo-container h3 {
+    font-size: 1rem;
+    padding: 1rem 2rem;
+}
+
+.video-demo-container iframe {
+    padding: 0rem 2rem;
+}
+
+.source-code-link {
+    padding: 0 1rem;
+    font-size: 1rem;
+}
+
+.source-code-link a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.source-code-link a:hover {
+    text-decoration: underline;
+}
