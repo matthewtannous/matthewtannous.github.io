@@ -24,12 +24,11 @@ permalink: /projects/
         <p class="project-description">
             {{ project.short_description }}
         </p>
-
         <div class="project-images">
             {% for image in image_files %}
             {% if image.path contains project.title %}
-            <a href="{{ image.path }}" target="_blank">
-                <img class="project-image" src="{{ image.path }}" alt="{{ project.title }} demo">
+            <a href="{{site.url}}{{ image.path }}" target="_blank">
+                <img class="project-image" src="{{site.url}}{{ image.path }}" alt="{{ project.title }} demo">
             </a>
 
             {% endif %}
