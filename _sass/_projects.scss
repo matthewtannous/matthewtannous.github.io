@@ -1,7 +1,7 @@
 .project-container {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 0 1.5rem;
+    padding: 0rem 1.5rem;
     display: grid;
 }
 
@@ -22,7 +22,10 @@
 .project-title a {
     text-decoration: none;
     color: blue;
-    // color: #222
+}
+
+.project-title a:hover {
+    text-decoration: underline;
 }
 
 .project-description {

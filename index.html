@@ -5,24 +5,17 @@ title: Home
 
 <h1> {{ site.title }}</h1>
 
-I am a Computer Science student in my junior year at the University of Balamand (UoB). 
+<div class="text-container">
 
-<div>
-<h2>Education:</h2>
-  <p>
-     I learnt many programming languages, frameworks and concepts, both from university courses and personal learning.
-  </p>
-  <p>
-I also completed CS50x, harvard's introductory computer science course, which taught me a broad range of topics, from C, algorithms and data structures, to python, SQL, and web programming.
-  </p>
-</div>
+    {% for list in site.data.about %}
+    <div class="paragraph-container">
 
-<div>
-<h2>Activities</h2>
-  <p>
-I recently joined the Google Developer's Group (GDG) on Campus - UOB Koura , with whom I participated in many activities.
-  </p>
-  <p>
-I was also chosen to be part of the UoB LCPC team, to compete in a national coding tournament
-  </p>
+        <h2 class="paragraph-title"> {{ list[0] | capitalize }} </h2>
+
+        {% for sentence in list[1] %}
+            <p class="sentence"> {{ sentence }}</p>
+        {% endfor %}
+
+    </div>
+    {% endfor %}
 </div>
