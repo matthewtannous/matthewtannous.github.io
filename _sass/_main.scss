@@ -1,0 +1,43 @@
+// Navigation bar 
+.navbar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+
+    border-bottom: 1px solid rgba($color: #000000, $alpha: 0.1);
+    margin-bottom: 1.5rem;
+}
+
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    color: blue;
+    font-weight: 400;
+    padding: 0.4rem 0.2rem;
+    font-size: 1.3rem;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+}
+
+.nav-link.active {
+    color: blue !important;
+    font-weight: 700;
+}
+
+@media (max-width: 600px) {
+    .navbar-container {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+}
+
+
+// Page titles
+h1 {
+    padding-left: 0.5rem;
+    font-size: 2.5rem;
+    margin: 2rem 0;
+    font-weight: 700;
+}
