@@ -27,8 +27,8 @@ permalink: /projects/
         <div class="project-images">
             {% for image in image_files %}
             {% if image.path contains project.title %}
-            <a href="{{site.url}}{{ image.path }}" target="_blank">
-                <img class="project-image" src="{{site.url}}{{ image.path }}" alt="{{ project.title }} demo">
+            <a href="{{ image.path | relative_url }}" target="_blank">
+                <img class="project-image" src="{{ image.path | relative_url }}" alt="{{ project.title }} demo">
             </a>
 
             {% endif %}

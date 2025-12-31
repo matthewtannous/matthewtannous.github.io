@@ -27,6 +27,7 @@ description: |
   
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://matthewtannous.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+relative_url: "https://matthewtannous.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 
 github_username:  matthewtannous
 github_account: https://github.com/matthewtannous
