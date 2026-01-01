@@ -10,7 +10,9 @@ title: Home
     {% for list in site.data.about %}
     <div class="paragraph-container">
 
+        {% unless list[0] == "introduction" %}
         <h2 class="paragraph-title"> {{ list[0] | capitalize }} </h2>
+        {% endunless %}
 
         {% for sentence in list[1] %}
             <p class="sentence"> {{ sentence }}</p>
