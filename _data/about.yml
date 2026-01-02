@@ -2,15 +2,21 @@ introduction:
   - I am a Computer Science student in my junior year at the University of Balamand.
 
 education:
-  - I learnt many programming languages, frameworks and concepts, both from university courses and personal learning.
-    These include Java, C++, Python, SQL, as well as the NodeJS frameworks express and EJS, used in creating dynamic and scalable web applications.
-  - "I also completed CS50x, Harvard University's Introduction to Computer Science course, which taught me a broad range of topics: from C,
-    algorithms and data structures, to python, SQL, and web programming (using python's flask library)."
+  - I learnt many programming languages, frameworks and concepts, both from
+    university courses and personal learning.
+    These include Java, C++, Python, SQL, as well as the NodeJS frameworks
+    express and EJS, used in creating dynamic and scalable web applications.
+
+  - "I also completed CS50x, Harvard University's Introduction to Computer
+    Science course, which taught me a broad range of topics: from C, algorithms
+    and data structures, to python, SQL, and web programming (using python's
+    flask library)."
 
 activities:
   - I am currently a member of the Google Developer's Group (GDG) on Campus - UOB Koura.
     GDG is responsible for hosting many events related to the field of Computer Science.
     These include workshops for Git and GitHub, game development, AI, and many more...
+
   - I was also chosen to be part of the UOB Lebanese Collegiate Programming Contest (LCPC) team,
     which will compete in the 2026 ICPC Lebanese Collegiate Programming Contest, one of Lebanon's
     biggest programming competitions.
