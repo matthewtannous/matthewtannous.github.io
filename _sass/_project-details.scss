@@ -22,7 +22,8 @@
 
 .video-demo-container iframe {
     width: 100%;
-    height: 500px;
+    aspect-ratio: 16 / 9;
+    // height: 500px;
 }
 
 .source-code-link {
