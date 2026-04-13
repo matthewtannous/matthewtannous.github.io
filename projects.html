@@ -21,9 +21,7 @@ permalink: /projects
             <a href="{{ project.url }}">{{ project.title }}</a>
         </h2>
 
-        <p class="project-description">
-            {{ project.short_description }}
-        </p>
+        <p class="project-description">{{ project.short_description }}</p>
         <div class="project-images">
             {% for image in image_files %}
             {% if image.path contains project.title %}
