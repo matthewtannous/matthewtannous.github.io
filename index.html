@@ -6,18 +6,48 @@ title: Home
 <h1> {{ site.title }}</h1>
 
 <div class="text-container">
-
-    {% for list in site.data.about %}
+    <!-- Introduction -->
     <div class="paragraph-container">
-
-        {% unless list[0] == "introduction" %}
-        <h2 class="paragraph-title"> {{ list[0] | capitalize }} </h2>
-        {% endunless %}
-
-        {% for sentence in list[1] %}
-            <p class="sentence"> {{ sentence }}</p>
-        {% endfor %}
-
+        <p class="sentence">
+            I am a Computer Science student in my junior year at the University of Balamand.
+        </p>
     </div>
-    {% endfor %}
+
+    <!-- Education -->
+    <div class="paragraph-container">
+        <h2 class="paragraph-title">Education</h2>
+
+        <div class="paragraph-container">
+            <p class="sentence">
+                I learnt many programming languages, frameworks and concepts, both from
+                university courses and personal learning.
+                These include Java, C++, Python, SQL, as well as the NodeJS frameworks
+                express and EJS, used in creating dynamic and scalable web applications.
+            </p>
+            <p class="sentence">
+                I also completed CS50x, Harvard University's Introduction to Computer
+                Science course, which taught me a broad range of topics: from C, algorithms
+                and data structures, to python, SQL, and web programming (using python's
+                flask library).
+            </p>
+        </div>
+    </div>
+
+    <!-- Activities -->
+    <div class="paragraph-container">
+        <h2 class="paragraph-title">Activites</h2>
+
+        <div class="paragraph-container">
+            <p class="sentence">
+                I am currently a member of the Google Developer's Group (GDG) on Campus - UOB Koura.
+                GDG is responsible for hosting many events related to the field of Computer Science.
+                These include workshops for Git and GitHub, game development, AI, and many more...
+            </p>
+            <p class="sentence">
+                I was also chosen to be part of the UOB Lebanese Collegiate Programming Contest (LCPC) team,
+                which will compete in the 2026 ICPC Lebanese Collegiate Programming Contest, one of Lebanon's
+                biggest programming competitions.
+            </p>
+        </div>
+    </div>
 </div>
