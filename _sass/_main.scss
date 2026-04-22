@@ -35,10 +35,15 @@
 
 
 // Page titles
-h1 {
-    // padding-left: 1.75rem;
+.page-title {
     font-size: 2.5rem;
     margin: 2rem 0;
     font-weight: 700;
     text-align: center;
+}
+
+.content-wrapper {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
 }
